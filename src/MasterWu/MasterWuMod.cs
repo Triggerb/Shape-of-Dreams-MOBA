@@ -47,14 +47,18 @@ namespace MasterWu
                 ReplaceUi(data, "Hero_Husk_Description",
                     "Master Wu is a swift melee Traveler who turns careful positioning and precise timing into relentless sword pressure.");
 
-                ReplaceSkill(data, "D_TheKillingFlow", "Focused Rhythm",
-                    "Attack speed is converted into offensive momentum.");
+                ReplaceSkill(data, "D_TheKillingFlow", "Double Strike",
+                    "Every fourth basic attack strikes a second time for 50% damage. The bonus strike begins the next count.");
                 ReplaceSkill(data, "M_FlashStep", "Wind Step",
                     "Dash rapidly in the chosen direction and reset your attack flow.");
-                ReplaceSkill(data, "E_ChainLightning", "Vanishing Cut",
-                    "Strike a target and rapidly cut through nearby enemies. Damage scales with Attack Damage.");
+                ReplaceSkill(data, "R_LightningDance", "Alpha Strike",
+                    "Become untargetable and rapidly strike the chosen enemy and nearby targets before reappearing.");
+                ReplaceSkill(data, "R_Tranquility", "Meditation",
+                    "Meditate for up to 4 seconds, taking 90% less damage and restoring Health continuously. Moving ends Meditation.");
+                ReplaceSkill(data, "Q_IncendiaryRounds", "Wuju Style",
+                    "For 5 seconds, basic attacks deal 10 plus 20% Attack Damage as bonus true damage.");
                 ReplaceSkill(data, "R_AnnihilationStance", "Unbound Tempo",
-                    "Enter a fast offensive stance with increased attack power, attack speed, and mobility uptime.");
+                    "For 8 seconds, gain 65% Attack Speed and 55% Movement Speed.");
             }
 
             Debug.Log($"[Master Wu] Applied localization to {DewLocalization.buildData.dataByLanguage.Count} languages");

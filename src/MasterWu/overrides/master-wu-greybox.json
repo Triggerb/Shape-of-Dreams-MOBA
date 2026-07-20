@@ -1,18 +1,5 @@
 [
   {
-    "target": "Hero_Husk",
-    "overrides": {
-      "EntityControl::baseAgentSpeed": "5.5",
-      "EntityControl::rotationSmoothTime": "0.04",
-      "EntityStatus::baseStats.attackDamage": "58",
-      "EntityStatus::baseStats.abilityPower": "20",
-      "EntityStatus::baseStats.maxHealth": "260",
-      "EntityStatus::baseStats.armor": "2",
-      "EntityStatus::scalingStats.attackDamageFlat": "3",
-      "EntityStatus::scalingStats.maxHealthPercentage": "22"
-    }
-  },
-  {
     "target": "At_Atk_HuskSword",
     "overrides": {
       "configs.0._cooldownTime": "1.1",
@@ -28,24 +15,6 @@
       "uncollidableRatio": "1",
       "minDistance": "1.5",
       "doAttackReset": "true"
-    }
-  },
-  {
-    "target": "Ai_E_ChainLightning",
-    "overrides": {
-      "maxChainCount": "4",
-      "chainDelay": "0.04",
-      "firstProcCoefficient": "0.75",
-      "chainProcCoefficient": "0.25",
-      "canChainToSelf": "false",
-      "firstDamage.baseValue": "25",
-      "firstDamage.adFactor": "1",
-      "firstDamage.apFactor": "0",
-      "firstDamage.valueString": "25 1ad",
-      "chainDamage.baseValue": "10",
-      "chainDamage.adFactor": "0.35",
-      "chainDamage.apFactor": "0",
-      "chainDamage.valueString": "10 0.35ad"
     }
   },
   {

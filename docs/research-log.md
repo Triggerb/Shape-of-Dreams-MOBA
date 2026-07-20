@@ -92,3 +92,22 @@ Traveler/content registration surface before writing the first gameplay code.
   movement speed, no shockwave, and no main-skill lock for eight seconds.
 - JSON validation passes for five targets and 40 keys; C# builds with zero warnings
   and errors.
+
+## 2026-07-20 - Full starting kit prototype 0.4.0
+
+- Identified `St_R_LightningDance` / `Se_R_LightningDance` as the native skill
+  closest to Alpha Strike: the caster becomes invulnerable, disappears, travels
+  between nearby targets, damages them, and reappears when the sequence ends.
+- Equipped runtime-created skills into the otherwise unused W and E ability slots:
+  Tranquility supplies Meditation's channel and Incendiary Rounds supplies Wuju
+  Style's activation, duration, cooldown, and UI lifecycle.
+- Added server-side Meditation healing, 90% incoming damage reduction, and movement
+  cancellation. Added Wuju true damage only while its timed buff is active.
+- Disabled Shell's Killing Flow status behavior while retaining its identity slot
+  as the visible home for Double Strike. Double Strike remains implemented by the
+  Master Wu controller.
+- Suppressed Annihilation Stance's enlarged attack visuals, compensated its range
+  bonus, and retained only the configured attack-speed and added movement-speed
+  effects for Highlander.
+- Removed the `Hero_Husk` JSON variant. It was the remaining likely source of lobby
+  Addressables reconstruction attempts for base character skill references.
