@@ -48,3 +48,16 @@ Traveler/content registration surface before writing the first gameplay code.
 - Added nine official JSON override targets (51 validated keys) covering Traveler
   stats, sword cadence, dash, line/circle strike, and ultimate stance.
 - Built with zero warnings/errors and deployed version 0.2.0 locally.
+
+## 2026-07-20 — Greybox 0.2.1 hotfix
+
+- User confirmed the conversion is playable and the hero display name changes.
+- Fixed boolean override values: the exported examples use title-case values, but
+  the runtime JSON deserializer requires lowercase JSON boolean literals.
+- Changed skill localization replacement to cover every config index instead of
+  only config zero.
+- Confirmed one reported missing Addressable GUID exists inside a base-game bundle;
+  it is not supplied by this mod. The other was not a literal installed key.
+- Added a deployment guard that refuses to overwrite the mod while the game is
+  running. Clean restarts are now required around gameplay-override changes to
+  avoid stale resource and constellation UI state.

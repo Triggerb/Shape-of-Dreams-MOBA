@@ -7,6 +7,10 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
+if (Get-Process -Name 'Shape of Dreams' -ErrorAction SilentlyContinue) {
+    throw 'Shape of Dreams is running. Exit the game completely before deploying to avoid stale loaded assemblies, Addressables, and UI references.'
+}
+
 $repositoryRoot = Split-Path -Parent $PSScriptRoot
 $projectDirectory = Join-Path $repositoryRoot 'src\MasterWu'
 $expectedExecutable = Join-Path $GameDirectory 'Shape of Dreams.exe'

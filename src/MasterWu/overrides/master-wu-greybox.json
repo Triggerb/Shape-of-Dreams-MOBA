@@ -37,7 +37,7 @@
       "speed": "90",
       "uncollidableRatio": "1",
       "minDistance": "1.5",
-      "doAttackReset": "True"
+      "doAttackReset": "true"
     }
   },
   {
@@ -75,8 +75,8 @@
     "target": "St_R_AnnihilationStance",
     "overrides": {
       "configs.0._cooldownTime": "70",
-      "configs.0.lockCooldownUntilKilled": "False",
-      "configs.0.lockCastUntilKilled": "False"
+      "configs.0.lockCooldownUntilKilled": "false",
+      "configs.0.lockCastUntilKilled": "false"
     }
   },
   {

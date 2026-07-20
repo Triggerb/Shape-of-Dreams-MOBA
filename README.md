@@ -71,6 +71,8 @@ dotnet build .\src\MasterWu\MasterWu.csproj --configuration Debug
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\tools\Deploy-LocalMod.ps1
 ```
 
-Close the game before deployment. Then launch it, open **Mods**, enable
-**Master Wu**, and use Developer Mode's log viewer to verify the `[Master Wu]`
-load/unload messages.
+Close the game before deployment; the deployment script refuses to overwrite a
+loaded mod. Then launch it, open **Mods**, enable **Master Wu**, and use Developer
+Mode's log viewer to verify the `[Master Wu]` load/unload messages. After changing
+or disabling a gameplay-override mod, restart the game before opening Traveler
+loadouts or constellations; live reload can leave stale Addressable/UI references.

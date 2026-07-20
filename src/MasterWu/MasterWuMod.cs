@@ -85,16 +85,18 @@ namespace MasterWu
                 return;
             }
 
-            SkillConfigData config = skill.configs[0];
-            string originalName = config.name;
-            string originalShortDescription = config.shortDescription;
-            _restoreLocalization.Add(() =>
+            foreach (SkillConfigData config in skill.configs)
             {
-                config.name = originalName;
-                config.shortDescription = originalShortDescription;
-            });
-            config.name = name;
-            config.shortDescription = shortDescription;
+                string originalName = config.name;
+                string originalShortDescription = config.shortDescription;
+                _restoreLocalization.Add(() =>
+                {
+                    config.name = originalName;
+                    config.shortDescription = originalShortDescription;
+                });
+                config.name = name;
+                config.shortDescription = shortDescription;
+            }
         }
     }
 }
