@@ -1,0 +1,5 @@
+[h1]Master Wu[/h1]
+Early development build for an original fast melee Traveler.
+
+Version 0.1 only verifies the official mod lifecycle. It does not add or modify a
+playable Traveler yet.

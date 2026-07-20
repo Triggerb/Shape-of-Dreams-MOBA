@@ -58,3 +58,14 @@ structure takes priority.
 - [Official API reference](https://lizardsmoothie.com/sod/moddoc/api/Global.html)
 - [Steam Workshop](https://steamcommunity.com/app/2444750/workshop/)
 - [Shape of Dreams on Steam](https://store.steampowered.com/app/2444750/Shape_of_Dream/)
+
+## Build and local deployment
+
+```powershell
+dotnet build .\src\MasterWu\MasterWu.csproj --configuration Debug
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\tools\Deploy-LocalMod.ps1
+```
+
+Close the game before deployment. Then launch it, open **Mods**, enable
+**Master Wu**, and use Developer Mode's log viewer to verify the `[Master Wu]`
+load/unload messages.
