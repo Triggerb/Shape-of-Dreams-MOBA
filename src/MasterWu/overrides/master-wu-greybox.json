@@ -31,41 +31,37 @@
     }
   },
   {
-    "target": "Ai_Q_Laceration_Dash",
+    "target": "Ai_E_ChainLightning",
     "overrides": {
-      "cooldownReductionRatio": "0.3",
-      "dash.distance": "6.5",
-      "dash.duration": "0.12",
-      "dmgFactor.adFactor": "1.35",
-      "dmgFactor.valueString": "1.35ad"
-    }
-  },
-  {
-    "target": "Ai_Q_Laceration_Circle",
-    "overrides": {
-      "prepareDuration": "0.35",
-      "slashDuration": "0.1",
-      "cooldownReductionPerHit": "0.12",
-      "cooldownReductionMax": "0.48",
-      "selfSlowAmount": "20",
-      "slashDamage.adFactor": "1.8",
-      "slashDamage.valueString": "1.8ad"
+      "maxChainCount": "4",
+      "chainDelay": "0.04",
+      "firstProcCoefficient": "0.75",
+      "chainProcCoefficient": "0.25",
+      "canChainToSelf": "false",
+      "firstDamage.baseValue": "25",
+      "firstDamage.adFactor": "1",
+      "firstDamage.apFactor": "0",
+      "firstDamage.valueString": "25 1ad",
+      "chainDamage.baseValue": "10",
+      "chainDamage.adFactor": "0.35",
+      "chainDamage.apFactor": "0",
+      "chainDamage.valueString": "10 0.35ad"
     }
   },
   {
     "target": "Se_R_AnnihilationStance",
     "overrides": {
       "duration": "8",
-      "dodgeSkillAddedCharges": "1",
-      "adPercentage.baseValue": "15",
-      "adPercentage.lvlFactor": "4",
-      "adPercentage.valueString": "15 4x",
-      "atkSpdPercentage.baseValue": "30",
-      "atkSpdPercentage.lvlFactor": "8",
-      "atkSpdPercentage.valueString": "30 8x",
-      "dodgeSkillHaste.baseValue": "20",
-      "dodgeSkillHaste.lvlFactor": "5",
-      "dodgeSkillHaste.valueString": "20 5x"
+      "dodgeSkillAddedCharges": "0",
+      "adPercentage.baseValue": "0",
+      "adPercentage.lvlFactor": "0",
+      "adPercentage.valueString": "0",
+      "atkSpdPercentage.baseValue": "65",
+      "atkSpdPercentage.lvlFactor": "0",
+      "atkSpdPercentage.valueString": "65",
+      "dodgeSkillHaste.baseValue": "0",
+      "dodgeSkillHaste.lvlFactor": "0",
+      "dodgeSkillHaste.valueString": "0"
     }
   }
 ]

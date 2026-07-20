@@ -1,6 +1,10 @@
 [h1]Master Wu[/h1]
 An early playable build of an original fast melee Traveler.
 
-Version 0.2 temporarily converts Shell into Master Wu while the project researches
+Version 0.3 temporarily converts Shell into Master Wu while the project researches
 the prefab, resource-registry, save-data, and networking work required for a
 separate ninth Traveler. Select Shell in the lobby to play Master Wu.
+
+This greybox adds a fourth-hit Double Strike cadence, Wuju-style pure on-hit
+damage, a physical AD-scaling chained Vanishing Cut, and a movement/attack-speed
+Unbound Tempo stance.

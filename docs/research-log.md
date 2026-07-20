@@ -74,3 +74,21 @@ Traveler/content registration surface before writing the first gameplay code.
   instances, status effects, hero stats, and attack settings remain overridden.
 - Custom skill cooldowns/charges are deferred to a runtime C# implementation that
   does not ask Addressables to rebuild SkillTrigger resources.
+
+## 2026-07-20 — Custom combat mechanics 0.3.0
+
+- Confirmed Shape of Dreams internally supports Q/W/E/R plus identity and movement
+  slots, although shipped Travelers begin runs with only Q/R/identity/movement.
+- Added a server-authoritative combat controller to Shell/Master Wu instances.
+- Implemented Double Strike: the fourth primary attack produces a 50%-damage bonus
+  basic hit, and that bonus hit counts as stack one of the next cycle.
+- Added a prototype Wuju-style pure on-hit component (`8 + 15% AD`) to all primary
+  and Double Strike hits. A pressable starting E awaits a safe custom SkillTrigger
+  asset; the combat mechanic is active continuously in this version.
+- Replaces the starting Q at server spawn with the game's Chain Lightning Memory,
+  renamed Vanishing Cut and overridden to deal physical AD-scaling damage across
+  up to five targets.
+- Reworked the ultimate status toward Unbound Tempo: +65% attack speed, +55%
+  movement speed, no shockwave, and no main-skill lock for eight seconds.
+- JSON validation passes for five targets and 40 keys; C# builds with zero warnings
+  and errors.

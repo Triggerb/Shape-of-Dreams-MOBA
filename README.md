@@ -32,10 +32,11 @@ Exact parity with any League of Legends champion is not a requirement. Preservin
 Shape of Dreams' slot model, networking model, balance hooks, and overall gameplay
 structure takes priority.
 
-Version `0.2.0` is the first playable greybox. While the separate-Traveler
+Version `0.3.0` is the first custom-mechanics greybox. While the separate-Traveler
 registration path is under research, enabling the mod converts **Shell** into
-Master Wu with original names and a rebalanced fast-melee kit. Select Shell in the
-lobby to test it.
+Master Wu. It adds a fourth-hit Double Strike cadence, Wuju-style pure on-hit
+damage, a physical AD-scaling chained Vanishing Cut, and an attack/movement-speed
+Unbound Tempo stance. Select Shell in the lobby to test it.
 
 ## Repository map
 

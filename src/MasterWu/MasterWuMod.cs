@@ -51,8 +51,8 @@ namespace MasterWu
                     "Attack speed is converted into offensive momentum.");
                 ReplaceSkill(data, "M_FlashStep", "Wind Step",
                     "Dash rapidly in the chosen direction and reset your attack flow.");
-                ReplaceSkill(data, "Q_Laceration", "Vanishing Cut",
-                    "Surge through enemies in a line, then finish with a circular sword strike.");
+                ReplaceSkill(data, "E_ChainLightning", "Vanishing Cut",
+                    "Strike a target and rapidly cut through nearby enemies. Damage scales with Attack Damage.");
                 ReplaceSkill(data, "R_AnnihilationStance", "Unbound Tempo",
                     "Enter a fast offensive stance with increased attack power, attack speed, and mobility uptime.");
             }
