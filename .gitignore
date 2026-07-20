@@ -1,0 +1,34 @@
+# Build output
+**/bin/
+**/obj/
+**/Build/
+**/dist/
+**/deploy/
+
+# IDE/user state
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+
+# Game/proprietary inputs
+game-reference/
+decompiled/
+extracted-assets/
+workshop-cache/
+*.assets
+*.resS
+*.resource
+
+# Managed game binaries and symbols must be referenced in place, not committed
+*.dll
+*.pdb
+
+# Runtime output
+*.log
+crash-reports/
+
+# OS files
+Thumbs.db
+.DS_Store
