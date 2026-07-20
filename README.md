@@ -32,6 +32,11 @@ Exact parity with any League of Legends champion is not a requirement. Preservin
 Shape of Dreams' slot model, networking model, balance hooks, and overall gameplay
 structure takes priority.
 
+Version `0.2.0` is the first playable greybox. While the separate-Traveler
+registration path is under research, enabling the mod converts **Shell** into
+Master Wu with original names and a rebalanced fast-melee kit. Select Shell in the
+lobby to test it.
+
 ## Repository map
 
 - `docs/known-facts.md` — verified local and online facts

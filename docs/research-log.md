@@ -31,3 +31,20 @@ Traveler/content registration surface before writing the first gameplay code.
   the game's `Mods/MasterWu` directory.
 - The remaining verification is in-game: enable Master Wu and confirm its lifecycle
   log messages appear and no loader error is produced.
+
+## 2026-07-20 — Playable greybox 0.2.0
+
+- User confirmed version 0.1 loads and unloads correctly.
+- Verified the repository is synchronized with `origin/main` over SSH.
+- Installed `ilspycmd` 10.1.1 in a user-local research tools directory and traced
+  the Traveler selection/resource path without adding decompiled code to the repo.
+- Established that a ninth Traveler needs prefab, GUID, network asset, content,
+  profile, localization, loadout, and progression registration.
+- Implemented a reversible Shell-to-Master-Wu conversion as the first playable
+  vertical slice.
+- Added original names: Focused Rhythm, Wind Step, Vanishing Cut, and Unbound
+  Tempo. The greybox deliberately omits a Meditate analogue to respect the game's
+  existing slot structure.
+- Added nine official JSON override targets (51 validated keys) covering Traveler
+  stats, sword cadence, dash, line/circle strike, and ultimate stance.
+- Built with zero warnings/errors and deployed version 0.2.0 locally.

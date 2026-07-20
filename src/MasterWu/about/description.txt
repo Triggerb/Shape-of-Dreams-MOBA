@@ -1,5 +1,6 @@
 [h1]Master Wu[/h1]
-Early development build for an original fast melee Traveler.
+An early playable build of an original fast melee Traveler.
 
-Version 0.1 only verifies the official mod lifecycle. It does not add or modify a
-playable Traveler yet.
+Version 0.2 temporarily converts Shell into Master Wu while the project researches
+the prefab, resource-registry, save-data, and networking work required for a
+separate ninth Traveler. Select Shell in the lobby to play Master Wu.

@@ -14,6 +14,7 @@ $modsDirectory = Join-Path $GameDirectory 'Mods'
 $destination = Join-Path $modsDirectory 'MasterWu'
 $assemblySource = Join-Path $projectDirectory "bin\$Configuration\netstandard2.1\MasterWu.dll"
 $aboutSource = Join-Path $projectDirectory 'about'
+$overridesSource = Join-Path $projectDirectory 'overrides'
 $templateAbout = Join-Path $modsDirectory 'ModTemplate\about'
 
 $resolvedGameDirectory = [System.IO.Path]::GetFullPath($GameDirectory)
@@ -35,11 +36,13 @@ if (-not (Test-Path -LiteralPath $assemblySource -PathType Leaf)) {
 
 $destinationAbout = Join-Path $destination 'about'
 $destinationBin = Join-Path $destination "bin\$Configuration\netstandard2.1"
-New-Item -ItemType Directory -Force -Path $destinationAbout, $destinationBin | Out-Null
+$destinationOverrides = Join-Path $destination 'overrides'
+New-Item -ItemType Directory -Force -Path $destinationAbout, $destinationBin, $destinationOverrides | Out-Null
 
 Copy-Item -LiteralPath $assemblySource -Destination (Join-Path $destinationBin 'MasterWu.dll') -Force
 Copy-Item -LiteralPath (Join-Path $aboutSource 'metadata.json') -Destination (Join-Path $destinationAbout 'metadata.json') -Force
 Copy-Item -LiteralPath (Join-Path $aboutSource 'description.txt') -Destination (Join-Path $destinationAbout 'description.txt') -Force
+Copy-Item -LiteralPath (Join-Path $overridesSource 'master-wu-greybox.json') -Destination (Join-Path $destinationOverrides 'master-wu-greybox.json') -Force
 
 foreach ($imageName in @('icon.png', 'preview.png')) {
     $imageSource = Join-Path $templateAbout $imageName

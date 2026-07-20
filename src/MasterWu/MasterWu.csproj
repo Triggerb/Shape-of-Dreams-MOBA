@@ -101,10 +101,6 @@
       <HintPath>$(GameManagedDir)\Unity.Mathematics.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Mirror.CodeGen">
-      <HintPath>$(GameManagedDir)\Unity.Mirror.CodeGen.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.Profiling.Core">
       <HintPath>$(GameManagedDir)\Unity.Profiling.Core.dll</HintPath>
       <Private>False</Private>
@@ -123,10 +119,6 @@
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
       <HintPath>$(GameManagedDir)\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Runtime.Tests">
-      <HintPath>$(GameManagedDir)\Unity.RenderPipelines.Universal.Runtime.Tests.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
@@ -205,10 +197,6 @@
       <HintPath>$(GameManagedDir)\Unity.Services.Wire.Internal.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.ShaderGraph.Utilities">
-      <HintPath>$(GameManagedDir)\Unity.ShaderGraph.Utilities.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>$(GameManagedDir)\Unity.TextMeshPro.dll</HintPath>
       <Private>False</Private>
@@ -243,10 +231,6 @@
     </Reference>
     <Reference Include="Mirror.Authenticators">
       <HintPath>$(GameManagedDir)\Mirror.Authenticators.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Mirror.CompilerSymbols">
-      <HintPath>$(GameManagedDir)\Mirror.CompilerSymbols.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Mirror.Components">

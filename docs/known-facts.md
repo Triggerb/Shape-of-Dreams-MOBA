@@ -70,3 +70,19 @@ The safest path is a vertical slice: first prove local mod loading, then inject 
 clone one Traveler registration while reusing runtime game assets, then replace
 one component at a time. Native disassembly should be unnecessary unless a future
 build moves to IL2CPP or a native-only boundary becomes relevant.
+
+## Traveler registration trace
+
+- The lobby iterates `Dew.allHeroes`, resolves each entry through `DewResources`,
+  filters it through the active `DewGameContentSettings.availableHeroes`, and
+  creates a selection item from the resulting `Hero` prefab.
+- Runtime resources are backed by `DewResourceDatabase` mappings for type/GUID,
+  name/GUID, network asset ID/GUID, dependencies, and light/heavy asset variants.
+- Selection and progression additionally assume a matching profile hero entry,
+  mastery data, localization keys, loadout skills, constellation data, and valid
+  Mirror network prefab identity.
+- Consequently, a separate ninth Traveler requires a registered serialized prefab
+  and coordinated resource/network/save entries. A C# subclass plus UI insertion
+  alone would produce an incomplete or unsafe character.
+- The `0.2.0` greybox therefore converts Shell reversibly while we establish the
+  supported external prefab/AssetBundle route.
