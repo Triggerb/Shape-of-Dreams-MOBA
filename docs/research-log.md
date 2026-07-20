@@ -61,3 +61,16 @@ Traveler/content registration surface before writing the first gameplay code.
 - Added a deployment guard that refuses to overwrite the mod while the game is
   running. Clean restarts are now required around gameplay-override changes to
   avoid stale resource and constellation UI state.
+
+## 2026-07-20 — Addressables hotfix 0.2.2
+
+- Mapped missing key `f35cb58ffe62fd14889b14de623aa3c4` to the base game's
+  `St_Q_Laceration` resource inside its serialized resource database.
+- Mapped the related identity-key failure to Shell's `St_D_TheKillingFlow`.
+- Confirmed that direct JSON variants of `St_*` SkillTrigger resources can be
+  registered by name but cannot be reloaded by GUID from the runtime Addressables
+  catalog in this build.
+- Removed direct overrides for movement, Q, and R SkillTriggers. Underlying ability
+  instances, status effects, hero stats, and attack settings remain overridden.
+- Custom skill cooldowns/charges are deferred to a runtime C# implementation that
+  does not ask Addressables to rebuild SkillTrigger resources.
